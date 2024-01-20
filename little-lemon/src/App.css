@@ -1,0 +1,140 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text&display=swap');
+
+/*Variables*/
+:root{
+    /*COLOURS*/
+    --primary-green: #495e57;
+    --primary-yellow: #f4ce14;
+    --secondary-salmon: #ee9972;
+    --secondary-pink: #fbdabb;
+    --secondary-grey: #edefee;
+    --secondary-darkgrey: #333333;
+    /*TEXT*/
+    /*Markazi text*/
+    --regular-fs: 53px;
+    --medium-title: 85px;
+    --subtitle-fs: 65px;
+    /*Karla*/
+    --medium-desc: 24px;
+    --section-title: 26px;
+    --paragraph-text: 21px;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+}
+/* Navigation */
+/*LOGO*/
+
+/*LINKS*/
+.navbar{
+    padding: 10px 13%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 1em;   
+}
+
+nav ul li a{
+    color: #000;
+    font-family: "Karla", sans-serif;
+}
+
+nav ul li a:hover{
+    text-decoration: underline solid #495E57;    
+}
+
+nav{
+    z-index: 1000;
+}
+  
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navLinks{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navLinks.active{
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    background-color: #495E57;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+  
+/*HAMBURGER MENU*/
+.menuIcon{
+    display: none;
+}
+
+/* Header */
+/*TEXT*/
+/*IMAGE*/
+/*BUTTON*/
+
+
+/* Main */
+/*Menu*/
+/*MENU ITEMS*/
+/*MENU IMAGES*/
+/*MENU PRICES*/
+/*TEXT*/
+
+
+/* Booking */
+/*FORM*/
+
+
+/* Footer */
+/*LOGO*/
+/*ADRESS*/
+
+/*Mobile device*/
+@media screen and (max-width: 767px) {
+    .menuIcon{
+        display: block;
+        cursor: pointer;
+    }
+    .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background: #333333;
+        background-color: #000;
+    }
+    .navLinks.active{
+        display: flex;
+        background: #495E57;
+        padding: 20px 0;
+    }
+    .navLinks{
+        display: none;
+    }
+    .navbar{
+        background:#fff;
+        padding: 10px 8%;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+
+}
