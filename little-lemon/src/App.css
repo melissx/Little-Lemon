@@ -1,187 +1,500 @@
-/*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text&display=swap');
-
-/*Variables*/
-:root{
-    /*COLOURS*/
-    --primary-green: #495e57;
-    --primary-yellow: #f4ce14;
-    --secondary-salmon: #ee9972;
-    --secondary-pink: #fbdabb;
-    --secondary-grey: #edefee;
-    --secondary-darkgrey: #333333;
-    /*TEXT*/
-    /*Markazi text*/
-    --regular-fs: 53px;
-    --medium-title: 85px;
-    --subtitle-fs: 65px;
-    /*Karla*/
-    --medium-desc: 24px;
-    --section-title: 26px;
-    --paragraph-text: 21px;
-}
-
 body{
-    width: 100%;
-    margin: 0 auto;
+    margin: 0;
 }
-/* Navigation */
-/*LINKS*/
-.navbar{
-    padding: 10px 13%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ul{
+    list-style: none;
 }
-
-nav ul li{
-    display: inline-block;
-    padding: 1em;   
+h1{
+    font-family: "Markazi Text", serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #f4ce14;    
 }
-
-nav ul li a{
+h2 {
+    font-family: "Markazi Text", serif;
+    font-size: 30px;
+    color: #fff;
+    margin-top: -1.5em;
+}
+h3 {
+    font-family: "Markazi Text", serif;
+    font-size: 60px;
+    color: #000;
+    margin: 1em;
+    margin-right: 5em;
+}
+h4 {
+    font-family: "Markazi Text", serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+}
+h5 {
+    font-family: "Markazi Text", serif;
+    font-size: 30px;
+    color: #000;
+    margin-top: -2.5em;
+}
+#button{
+    background-color: #f4ce14;
     color: #000;
     font-family: "Karla", sans-serif;
-}
-
-nav ul li a:hover{
-    text-decoration: underline solid #495E57;    
-}
-
-nav{
-    z-index: 1000;
-}
-  
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.navLinks{
-    list-style: none;
-    display: flex;
-    align-items: center;
-}
-
-.navLinks.active{
-    flex-direction: column;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    width: 100%;
-    background-color: #495E57;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-}
-  
-/*HAMBURGER MENU*/
-.menuIcon{
-    display: none;
-}
-
-/* Header */
-.header{
-    background-color: var(--primary-green);
-    padding: 40px 0;
-}
-
-.headerContainer{
-    color: var(--secondary-grey);
-    padding: 10px 13%;
-    position: relative;
-}
-/*TEXT*/
-h2{
-    color: var(--primary-yellow);
-}
-
-h3{
-    font-size: var(--section-title);
-}
-
-.banner p{
-    font-size: var(--paragraph-text);
-    max-width: 520px;
-    line-height: 1.5;
-    margin-bottom: 30px;
-}
-/*IMAGE*/
-.bannerImg{
-    position: absolute;
-    right: 13%;
-    top: 15%;
-    width: 400px;
-}
-
-.bannerImg img{
-    width: 100%;
-    height: 400px;
-    border-radius: 16px;
-}
-/*BUTTON*/
-button{
-    background-color: var(--primary-yellow);
-    padding: 14px 18px;
+    font-weight: 800;
+    font-size: 18px;
+    width: 12em;
+    height: 3em;
+    margin: 1em;
+    border-radius: 2em;
     border: none;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);   
+}
+#button:hover {
     cursor: pointer;
 }
-button a{
-    color: #000;
+.specials #button {
+    margin-top: 4em;
 }
-/* Main */
-/*Menu*/
-/*MENU ITEMS*/
-/*MENU IMAGES*/
-/*MENU PRICES*/
-/*TEXT*/
 
-
-/* Booking */
-/*FORM*/
-
-
-/* Footer */
-/*LOGO*/
-/*ADRESS*/
-
-/*Mobile device*/
-@media screen and (max-width: 767px) {
-    .menuIcon{
-        display: block;
-        cursor: pointer;
+/*NAVBAR*/
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 16px;
+    margin-left: 64px;
+    text-align: center;    
+}
+.navigation li{
+    display: inline-block;
+    margin: 16px;
+    color: #000;    
+}
+#nav, .a{
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    list-style: none;    
+}
+/*HEADER*/
+.header{
+    display: flex;
+    width: 100%;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    margin: 16px 80px;    
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+/*MAIN*/
+.main{
+    display: flex;
+    background-color: #495e57;
+    width: 100%;
+    height: 420px;
+    margin-top: 32px;  
+}
+.mainContent {
+    width: 40%;
+    margin-left: 7em;
+    margin-right: 5em;
+}
+.mainContent p{
+    font-family: "Karla", sans-serif;
+    font-size: 22px;
+    color: #fff;
+    width: 350px;    
+}
+.featured img {
+    width: 60%;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 32px;
+    margin-left: 96px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.featured {
+    width: 50%;
+}
+/*SPECIALS*/
+.specials {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 6em;
+}
+.specialsHead {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+.cardImgTop {
+    width: 95%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin-bottom: -0.2em;
+    box-shadow: 5px 10px 20px #ccc;
+    margin-top: 8em;
+}
+.card {
+    margin-top: -4em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+.cardBody {
+    font-family: "Karla", sans-serif;
+    background-color: #f2efef;
+    margin-right: 1em;
+    padding: 1em;
+    line-height: 1.8em;
+    height: 250px;
+    box-shadow: 5px 10px 20px #ccc;
+}
+.cardTitle {
+    font-family: "Markazi Text", serif;
+    font-size: 35px;
+    font-weight: 600;
+}
+.btn.btn-primary {
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    border: none;
+}
+.title {
+    width: 30%;
+    height: auto;
+    margin-right: 8em;
+}
+.titleButton{
+    width: 50%;
+    height: auto;
+    margin-top: 10.5em;
+    margin-left: 15em;
+}
+/*TESTIMONIALS*/
+.testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: #495e57;
+    text-align: center;
+    padding-top: 1em;
+}
+.testimonialHeader {
+    font-family: "Markazi Text", serif;
+    font-size: 60px;
+    font-weight: 700;
+    width: 100%;
+    color: #f4ce14;
+}
+.reviewContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.review {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    margin: 2em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.review p {
+    font-family: "Karla", sans-serif;
+}
+#profile {
+    width: 30%;
+    border-radius: 50%;
+    margin: 1em;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+#rating {
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+}
+.review h2 {
+    font-family: "Markazi Text", serif;
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+    margin: 0.1em;
+}
+/*BOOKING*/
+.reservation {
+    margin: 40px 0;
+}
+.reservation-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-column-gap: 40px;
+}
+.form-wrap {
+    padding: 30px 20px;
+}
+h2,
+h3 {
+    font-family: "Markazi Text";
+    font-size: 48px;
+    line-height: 1.2;
+    color: #495e57;
+    font-weight: 700;
+}
+h3 {
+    font-size: 30px;
+}
+.booking-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px 20px;
+    margin: 20px 0 0;
+    padding: 10px 0 0;
+    border-top: 1px solid ;
+}
+h3 {
+    grid-column: 1 / 3;
+}
+input {
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.2;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    border-bottom: 2px solid ;
+    transition: border 0.3s;
+}
+input[type="date"] {
+    text-transform: uppercase;
+}
+input[type="number"] {
+     overflow: hidden;
+}
+.img-wrap {
+    flex: 1 1 40%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 15px 15px 20px rgba(#000, 0.2);
+    overflow: hidden;
+}
+button {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #495e57;
+    font-size: 18px;
+    font-family: "Karla";
+    font-weight: 700;
+    color: white;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    box-shadow: 4px 6px 5px rgba(#000, 0.2);
+    cursor: pointer;
+}
+/*ABOUT*/
+.about{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 48px 0;
+}
+.aboutContent{
+    width: 40%;
+    margin-left: 112px;
+    margin-right: 80px;
+}
+.aboutContent p{
+    font-family: "Karla", sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    margin-top: -16px;
+}
+.owners{
+    width: 50%;
+}
+#chefs{
+    width: 50%;
+    height: 60%;
+    margin-top: 16px;
+    margin-left: 160px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+#restaurant{
+    width: 40%;
+    height: 60%;
+    margin-top: -160px;
+    margin-left: 32px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-top: 10px groove #495e57;
+}
+.footer img {
+    width: 100%;
+} 
+.one {
+    width: 20%;
+    margin-right: 2em;
+    display: flex;
+}
+.two {
+    width: 20%;
+    margin: 1em;
+    margin-top: 7em;
+ }
+.three {
+    width: 20%;
+    margin: 1em;
+    margin-top: 7em;
+}
+.four {
+    width: 20%;
+    margin: 1em;
+    margin-top: 7em;
+}
+/*MOBILE*/
+@media (max-width: 768px){
+    .about{
+        flex-wrap: wrap;
     }
-    .bar{
-        width: 25px;
-        height: 3px;
-        margin: 5px 0;
-        background: #333333;
-        background-color: #000;
+    .aboutContent{
+        width: 100%;
     }
-    .navLinks.active{
+    .aboutContent p{
+        font-size: 16px;
+    }
+    .owners{
+        width: 100%;
+        margin: 48px;
+    }
+    .bookingWrapper input,
+    .bookingWrapper select {
+      width: 300px;
+    }
+    .navigation{
         display: flex;
-        background: #495E57;
-        padding: 20px 0;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;   
     }
-    .navLinks{
+    .featured{
         display: none;
     }
-    .navbar{
-        background:#fff;
-        padding: 10px 8%;
-    }
-    nav ul li a{
-        color: #fff;
-    }
-    .bannerImg{
+    .featured img{
         display: none;
     }
-
+    .mainContent p{
+        text-align: center;
+        width: 95%;
+    }
+    .mainContent{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 32px;
+    }
+    .main{
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+    h3 {
+        font-size: 60px;
+        margin-top: 1em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .specials #button {
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    .cardBody {
+        height: 300px;
+    }
+    .footer {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer img {
+        width: 50%;
+        margin: 0;
+    }
+    .one,
+    .two,
+    .three,
+    .four {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .one {
+      margin: 10px;
+    }
+}
+@media (max-width: 1024px){
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 16px 0;
+    }
+    .logo img {
+        width: 75%;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .review p {
+        margin: 1em;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .featured img {
+        margin-left: -2em;
+        width: 100%;
+    }
 }

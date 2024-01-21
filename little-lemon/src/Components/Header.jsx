@@ -1,21 +1,21 @@
 import React from 'react';
-import bannerImg from "./Images/restaurantfood.jpg";
+import Nav from "./Nav";
+import logo from"../Assets/Icons/Logo.png";
+
 
 const Header = () => {
   return (
-    <header className='header'>
-      <div className="headerContainer">
-        <div className="banner">
-          <h2>Little Lemon</h2>
-          <h3>Chicago</h3>
-          <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with an modern twist</p>
-        </div>
-        <button aria-label='On Click'><a href="Booking">Reserve a Table</a></button>
+    <>
+    <div className="header">
+      <div className="logo">
+        <img src={logo} alt="Logo" />
       </div>
-      <div className="bannerImg">
-        <img src={bannerImg} alt="banner image" />
+
+      <div className="navigation">
+        <Nav />
       </div>
-    </header>
+    </div>
+  </>
   )
 }
 
